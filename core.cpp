@@ -121,6 +121,11 @@ int Mat_Cols(Mat m) {
     return m->cols;
 }
 
+// Mat_Dims returns the matrix dimensionality, >= 2
+int Mat_Dims(Mat m) {
+    return m->dims;
+}
+
 // Mat_Channels returns how many channels in this Mat.
 int Mat_Channels(Mat m) {
     return m->channels();

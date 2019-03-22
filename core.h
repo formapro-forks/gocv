@@ -222,6 +222,7 @@ Scalar Mat_Mean(Mat m);
 Mat Mat_Sqrt(Mat m);
 int Mat_Rows(Mat m);
 int Mat_Cols(Mat m);
+int Mat_Dims(Mat m);
 int Mat_Channels(Mat m);
 int Mat_Type(Mat m);
 int Mat_Step(Mat m);

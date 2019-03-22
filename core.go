@@ -429,6 +429,11 @@ func (m *Mat) Cols() int {
 	return int(C.Mat_Cols(m.p))
 }
 
+// Dims returns the matrix dimensionality, >= 2
+func (m *Mat) Dims() int {
+	return int(C.Mat_Dims(m.p))
+}
+
 // Channels returns the number of channels for this Mat.
 func (m *Mat) Channels() int {
 	return int(C.Mat_Channels(m.p))
